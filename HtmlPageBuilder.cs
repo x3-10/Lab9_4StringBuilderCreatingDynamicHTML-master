@@ -60,6 +60,8 @@ namespace Lab9_4StringBuilderCreatingDynamicHTML
 
             Console.WriteLine("Time to build our unordered list...");
 
+            htmlText.Append(htmlUnorderedOpen);
+
             htmlText.Append(htmlLIOpen);
             Console.WriteLine("Add an item to the list.");
             dynamicHtml = Console.ReadLine();
@@ -72,6 +74,7 @@ namespace Lab9_4StringBuilderCreatingDynamicHTML
             htmlText.Append(dynamicHtml);
             htmlText.Append(htmlLIClose);
 
+            htmlText.Append(bodyClose);
             htmlText.Append(htmlLIOpen);
             Console.WriteLine("Add another item to the list.");
             dynamicHtml = Console.ReadLine();
