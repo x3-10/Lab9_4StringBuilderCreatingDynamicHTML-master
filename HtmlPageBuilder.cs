@@ -9,6 +9,7 @@ namespace Lab9_4StringBuilderCreatingDynamicHTML
     class HtmlPageBuilder
     {
 
+
         private StringBuilder htmlText = new StringBuilder();
 
         private string bodyOpen { get; set; } = "<body>";
